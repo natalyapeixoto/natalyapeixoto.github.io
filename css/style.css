@@ -2,7 +2,7 @@ html{
   scroll-behavior: smooth;
 }
 header{
-  height: 100vh;
+  min-height: 95vh;
 }
 header nav {
   background-color: #111111;
@@ -16,7 +16,7 @@ header .text-autora {
 }
 
 header .row-size {
-  height: 80vh;
+  min-height: 80vh;
 }
 
 header .row-size h1 {
@@ -37,7 +37,7 @@ header .javascript-img {
    margin: 10px;
  }
  #sobre {
-   height: 100vh;
+   min-height: 95vh;
  }
 .portfolio .col {
   padding: 0;
@@ -82,6 +82,7 @@ header .javascript-img {
 }
 #contato {
   margin-top: 150px;
+  min-height: 95vh;
 }
 .contato p {
   margin-top: 50px;
