@@ -24,6 +24,7 @@
   "homepage": "https://github.com/natalyapeixoto/natalyapeixoto.github.io#readme",
   "dependencies": {
     "bootstrap": "^4.1.3",
-    "jquery": "^3.3.1"
+    "jquery": "^3.3.1",
+    "jquery-validation": "^1.18.0"
   }
 }
