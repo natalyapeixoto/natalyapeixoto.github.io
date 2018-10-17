@@ -11,6 +11,9 @@ header nav {
 header .nav-link:hover {
   opacity:0.3;
 }
+header .span-nav{
+  background-color: rgba(102, 101, 101, 0.705);
+}
 header .text-autora {
   font-size: 35px;
 }
