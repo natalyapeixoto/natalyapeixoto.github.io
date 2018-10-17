@@ -90,15 +90,42 @@ header .javascript-img {
   width: 50%;
   margin: 0 auto;
 }
+span.error {
+  color: rgba(199, 50, 50, 0.842);
+  font-family: monospace;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
 footer {
   margin-top: 150px;
   background-color: rgba(167, 153, 153, 0.849);
 }
 footer i{
   margin: 3px;
-  font-size: 23px;
+  font-size: 28px;
   color: black;
 }
 footer i:hover{
   opacity: 0.5;
+}
+
+
+#arrowTop {    
+  color: #211c24d2;
+  position: fixed;
+  top: 5%;
+  right: 2%;
+  cursor: pointer;
+  background: 0 0;
+  border: 0;
+  font-size: 2em;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#arrowTop::before {
+content: hidden;
+}
+#arrowTop:hover {
+  color: rgb(50, 48, 51);
+  transition: 0.3s;
 }
