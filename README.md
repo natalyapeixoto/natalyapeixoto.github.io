@@ -1,4 +1,8 @@
-# natalyapeixoto.github.io
-Github Pages 
+### My portfolio
 
-## coming soon: my portfolio :wink: 
+#### Used tecnologies:
+* HTML
+* CSS
+* JavaScript
+* jQuery
+* Bootstrap 
