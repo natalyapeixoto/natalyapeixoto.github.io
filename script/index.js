@@ -23,11 +23,9 @@ form.validate({
 
 
 const button = document.getElementById("arrowTop")
-
 button.addEventListener("click", function(){
     window.scrollTo(pageYOffset, 0);
 })
-
 window.addEventListener("scroll", function(){
     if(pageYOffset > 450){
         button.hidden = false;
@@ -35,3 +33,58 @@ window.addEventListener("scroll", function(){
     }
     button.hidden = true;
 })
+
+
+//scrol reveal 
+
+const sobre = document.querySelector("#sobre");
+window.addEventListener("scroll", function(){
+  console.log(pageXOffset)
+  if(pageYOffset >= 400){
+     sobre.classList.add("sobre-show")
+     sobre.classList.remove("sobre-hidden")
+  }
+  else{
+    sobre.classList.remove("sobre-show")
+     sobre.classList.add("sobre-hidden")
+  }
+})
+const portfolioTop = document.querySelector(".rowTop");
+window.addEventListener("scroll", function(){
+  console.log(pageXOffset)
+  if(pageYOffset >= 400){
+    portfolioTop.classList.add("portfolio-rowTop-show")
+    portfolioTop.classList.remove("portfolio-rowTop-hidden")
+  }
+  else{
+    portfolioTop.classList.remove("portfolio-rowTop-show")
+    portfolioTop.classList.add("portfolio-rowTop-hidden")
+  }
+})
+const portfolioM = document.querySelector(".rowMiddle");
+window.addEventListener("scroll", function(){
+  console.log(pageXOffset)
+  if(pageYOffset >= 600){
+    portfolioM.classList.add("portfolio-rowMiddle-show")
+    portfolioM.classList.remove("portfolio-rowMiddle-hidden")
+  }
+  else{
+    portfolioM.classList.remove("portfolio-rowMiddle-show")
+    portfolioM.classList.add("portfolio-rowMiddle-hidden")
+  }
+})
+
+const portfolioB = document.querySelector(".rowBottom");
+window.addEventListener("scroll", function(){
+  console.log(pageXOffset)
+  if(pageYOffset >= 700){
+    portfolioB.classList.add("portfolio-rowBottom-show")
+    portfolioB.classList.remove("portfolio-rowBottom-hidden")
+  }
+  else{
+    portfolioB.classList.remove("portfolio-rowBottom-show")
+    portfolioB.classList.add("portfolio-rowBottom-hidden")
+  }
+})
+
+

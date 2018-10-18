@@ -1,5 +1,6 @@
 html{
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 header{
   min-height: 100vh;
@@ -42,6 +43,7 @@ header .javascript-img {
  #sobre {
    min-height: 90vh;
  }
+ 
 .portfolio .col {
   padding: 0;
   background: black;
@@ -53,7 +55,7 @@ header .javascript-img {
   height: 300px;
   object-position: center;
   object-fit: cover;
-  opacity: 0.6;
+  opacity: 0.8;
   
 }
 .portfolio .portfolio-hover {
@@ -132,4 +134,39 @@ content: hidden;
 #arrowTop:hover {
   color: rgb(50, 48, 51);
   transition: 0.3s;
+}
+
+/*scroll reveal */
+.sobre-hidden{
+  opacity:0;
+ }
+ .sobre-show {
+   opacity:1;
+   transition: all 2s;
+ }
+
+.portfolio-rowBottom-hidden{
+  opacity:0;
+  margin-top: 500px;
+}
+.portfolio-rowMiddle-hidden {
+  opacity:0;
+  margin-right:-900px;
+}
+.portfolio-rowTop-hidden {
+  opacity:0;
+  margin-bottom: -600px;
+}
+
+.portfolio-rowBottom-show{
+  opacity:1;
+  transition: all 2s;
+}
+.portfolio-rowMiddle-show {
+  opacity:1;
+  transition: all 2s;
+}
+.portfolio-rowTop-show {
+  opacity:1;
+   transition: all 1.5s;
 }
