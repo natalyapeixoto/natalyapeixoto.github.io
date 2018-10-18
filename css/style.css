@@ -2,7 +2,7 @@ html{
   scroll-behavior: smooth;
 }
 header{
-  min-height: 95vh;
+  min-height: 100vh;
 }
 header nav {
   background-color: #111111;
@@ -29,7 +29,7 @@ header .text-autora{
   max-width: 200px;
 }
 header .javascript-img {
-  max-width: 200px;
+  max-width: 150px;
 }
 .progress-bar {
   text-align: left;
@@ -40,7 +40,7 @@ header .javascript-img {
    margin: 10px;
  }
  #sobre {
-   min-height: 95vh;
+   min-height: 90vh;
  }
 .portfolio .col {
   padding: 0;
@@ -85,13 +85,13 @@ header .javascript-img {
 }
 #contato {
   margin-top: 150px;
-  min-height: 95vh;
+  min-height: 60vh;
 }
 .contato p {
   margin-top: 50px;
 }
 .form-contato {
-  width: 50%;
+  width: 65%;
   margin: 0 auto;
 }
 span.error {
