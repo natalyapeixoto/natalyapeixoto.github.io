@@ -1,6 +1,6 @@
 ### My portfolio
 
-#### Used tecnologies:
+#### Tecnologies used:
 * HTML
 * CSS
 * JavaScript
