@@ -27,6 +27,9 @@ button.addEventListener("click", function(){
     window.scrollTo(pageYOffset, 0);
 })
 window.addEventListener("scroll", function(){
+  if (window.screen.availWidth < 800) {
+    return false;
+  }
     if(pageYOffset > 450){
         button.hidden = false;
         return false;
@@ -36,10 +39,16 @@ window.addEventListener("scroll", function(){
 
 
 //scrol reveal 
-
+console.log(window.screen.availWidth);
 const sobre = document.querySelector("#sobre");
 window.addEventListener("scroll", function(){
   console.log(pageXOffset)
+  if (window.screen.availWidth < 800){
+    sobre.classList.add("sobre-show")
+    sobre.classList.remove("sobre-hidden")
+    return false;
+  }
+  
   if(pageYOffset >= 400){
      sobre.classList.add("sobre-show")
      sobre.classList.remove("sobre-hidden")
@@ -51,7 +60,11 @@ window.addEventListener("scroll", function(){
 })
 const portfolioTop = document.querySelector(".rowTop");
 window.addEventListener("scroll", function(){
-  console.log(pageXOffset)
+  if (window.screen.availWidth < 800){
+    portfolioTop.classList.add("portfolio-rowTop-show")
+    portfolioTop.classList.remove("portfolio-rowTop-hidden")
+    return false;
+  }
   if(pageYOffset >= 400){
     portfolioTop.classList.add("portfolio-rowTop-show")
     portfolioTop.classList.remove("portfolio-rowTop-hidden")
@@ -63,7 +76,11 @@ window.addEventListener("scroll", function(){
 })
 const portfolioM = document.querySelector(".rowMiddle");
 window.addEventListener("scroll", function(){
-  console.log(pageXOffset)
+  if (window.screen.availWidth< 800){
+    portfolioM.classList.add("portfolio-rowMiddle-show")
+    portfolioM.classList.remove("portfolio-rowMiddle-hidden")
+    return false;
+  }
   if(pageYOffset >= 600){
     portfolioM.classList.add("portfolio-rowMiddle-show")
     portfolioM.classList.remove("portfolio-rowMiddle-hidden")
@@ -76,7 +93,11 @@ window.addEventListener("scroll", function(){
 
 const portfolioB = document.querySelector(".rowBottom");
 window.addEventListener("scroll", function(){
-  console.log(pageXOffset)
+  if (window.screen.availWidth < 800){
+    portfolioB.classList.add("portfolio-rowBottom-show")
+    portfolioB.classList.remove("portfolio-rowBottom-hidden")
+    return false;
+  }
   if(pageYOffset >= 700){
     portfolioB.classList.add("portfolio-rowBottom-show")
     portfolioB.classList.remove("portfolio-rowBottom-hidden")
