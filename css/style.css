@@ -39,7 +39,8 @@ header .text-autora{
   max-width: 200px;
 }
 header .javascript-img {
-  max-width: 150px;
+  max-width: 160px;
+  height: 130px;
 }
 .progress-bar {
   text-align: left;
