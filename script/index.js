@@ -49,7 +49,7 @@ window.addEventListener("scroll", function(){
     return false;
   }
   
-  if(pageYOffset >= 400){
+  if(pageYOffset >= 300){
      sobre.classList.add("sobre-show")
      sobre.classList.remove("sobre-hidden")
   }
