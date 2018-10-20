@@ -1,3 +1,5 @@
+
+//form validation with jQuery plugin: Validate
 let form = $(".form-contato");
 console.log(form);
 
@@ -17,11 +19,11 @@ form.validate({
       email: "Por favor, digite um e-mail válido"
       }, 
     tel: 'Por favor, digite seu número de telefone',
-  text: 'Me manda uma pequena mensagem'
+  text: 'Por favor, me envia uma pequena mensagem'
     }
 })
 
-
+//arrow to go back to the top
 const button = document.getElementById("arrowTop")
 button.addEventListener("click", function(){
     window.scrollTo(pageYOffset, 0);
@@ -37,18 +39,26 @@ window.addEventListener("scroll", function(){
     button.hidden = true;
 })
 
-
 //scrol reveal 
-console.log(window.screen.availWidth);
 const sobre = document.querySelector("#sobre");
+const portfolioTop = document.querySelector(".rowTop");
+const portfolioM = document.querySelector(".rowMiddle");
+const portfolioB = document.querySelector(".rowBottom");
+
 window.addEventListener("scroll", function(){
-  console.log(pageXOffset)
-  if (window.screen.availWidth < 800){
-    sobre.classList.add("sobre-show")
-    sobre.classList.remove("sobre-hidden")
-    return false;
+  switch(window.screen.availWidth){
+      case 800:
+        sobre.classList.add("sobre-show")
+        sobre.classList.remove("sobre-hidden")
+        portfolioTop.classList.add("portfolio-rowTop-show")
+        portfolioTop.classList.remove("portfolio-rowTop-hidden")
+        portfolioM.classList.add("portfolio-rowMiddle-show")
+        portfolioM.classList.remove("portfolio-rowMiddle-hidden")
+        portfolioB.classList.add("portfolio-rowBottom-show")
+        portfolioB.classList.remove("portfolio-rowBottom-hidden")
+        break;
   }
-  
+
   if(pageYOffset >= 300){
      sobre.classList.add("sobre-show")
      sobre.classList.remove("sobre-hidden")
@@ -56,14 +66,6 @@ window.addEventListener("scroll", function(){
   else{
     sobre.classList.remove("sobre-show")
      sobre.classList.add("sobre-hidden")
-  }
-})
-const portfolioTop = document.querySelector(".rowTop");
-window.addEventListener("scroll", function(){
-  if (window.screen.availWidth < 800){
-    portfolioTop.classList.add("portfolio-rowTop-show")
-    portfolioTop.classList.remove("portfolio-rowTop-hidden")
-    return false;
   }
   if(pageYOffset >= 400){
     portfolioTop.classList.add("portfolio-rowTop-show")
@@ -73,14 +75,6 @@ window.addEventListener("scroll", function(){
     portfolioTop.classList.remove("portfolio-rowTop-show")
     portfolioTop.classList.add("portfolio-rowTop-hidden")
   }
-})
-const portfolioM = document.querySelector(".rowMiddle");
-window.addEventListener("scroll", function(){
-  if (window.screen.availWidth< 800){
-    portfolioM.classList.add("portfolio-rowMiddle-show")
-    portfolioM.classList.remove("portfolio-rowMiddle-hidden")
-    return false;
-  }
   if(pageYOffset >= 600){
     portfolioM.classList.add("portfolio-rowMiddle-show")
     portfolioM.classList.remove("portfolio-rowMiddle-hidden")
@@ -88,15 +82,6 @@ window.addEventListener("scroll", function(){
   else{
     portfolioM.classList.remove("portfolio-rowMiddle-show")
     portfolioM.classList.add("portfolio-rowMiddle-hidden")
-  }
-})
-
-const portfolioB = document.querySelector(".rowBottom");
-window.addEventListener("scroll", function(){
-  if (window.screen.availWidth < 800){
-    portfolioB.classList.add("portfolio-rowBottom-show")
-    portfolioB.classList.remove("portfolio-rowBottom-hidden")
-    return false;
   }
   if(pageYOffset >= 700){
     portfolioB.classList.add("portfolio-rowBottom-show")
@@ -107,5 +92,11 @@ window.addEventListener("scroll", function(){
     portfolioB.classList.add("portfolio-rowBottom-hidden")
   }
 })
+
+
+
+
+
+
 
 
